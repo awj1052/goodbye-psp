@@ -1,0 +1,7 @@
+.my-progress-bar{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}

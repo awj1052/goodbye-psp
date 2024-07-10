@@ -1,0 +1,87 @@
+.profile-container {
+    width: 300px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture {
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-info h1 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .profile-info p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .profile-body {
+    margin-bottom: 20px;
+  }
+  
+  /* .profile-progress {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .progress-bar {
+    height: 10px;
+    background-color: #4caf50;
+    flex-grow: 1;
+    border-radius: 5px;
+    width: 0.1%;
+  } */
+  
+  .progress-text {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  
+  .profile-dates {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .date-block {
+    text-align: center;
+  }
+  
+  .date-block h2 {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .date-block p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .profile-footer {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .disclaimer {
+    color: #999;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  

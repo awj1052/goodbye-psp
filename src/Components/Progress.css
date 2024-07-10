@@ -1,0 +1,14 @@
+.my-progress {
+    height: 10px;
+    background-color: #4caf50;
+    display: flex;
+    border-radius: 5px;
+}
+
+.my-progress-wrap {
+    height: 10px;
+    background-color: #dddddd;
+    display: flex;
+    border-radius: 5px;
+    width: 100%;
+}
