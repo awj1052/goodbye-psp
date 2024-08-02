@@ -7,7 +7,7 @@ import PSP from './assets/psp.png';
 const UserProfile = () => {
 
   const dateStart = new Date('2024-06-25T00:00:00');
-  const dateDead = new Date('2024-08-05T00:00:00');
+  const dateDead = new Date('2024-08-05T13:00:00');
 
   const [time, setTime] = useState(new Date());
 
@@ -27,6 +27,10 @@ const UserProfile = () => {
   
   const dateDifferenceAll = timeDifferenceAll / (1000 * 60 * 60 * 24);
   const wastedDay = timeDifferenceAT / (1000 * 60 * 60 * 24);
+  const remainLifeDay = dateDifferenceAll - wastedDay;
+  const remainHour = String(parseInt(remainLifeDay * 24)).padStart(2, "0");
+  const remainMinute = String(parseInt(remainLifeDay * 24 * 60)%60).padStart(2, "0");
+  const remainSecond = String(parseInt(remainLifeDay * 24 * 60 * 60)%60).padStart(2, "0");
 
   return (
     <div className="profile-container">
@@ -56,8 +60,8 @@ const UserProfile = () => {
         </div>
       </div>
       <div className="profile-footer">
-        <p>전체 수명: {dateDifferenceAll}<br />허비한 수명: {wastedDay.toFixed(2)}<br />남은 수명: {(dateDifferenceAll-wastedDay).toFixed(2)}</p>
-        <p className="disclaimer">※ 위 계산 정보는 행정과 다르지 않음 수고</p>
+        <p>전체 수명: {dateDifferenceAll.toFixed(2)}<br />허비한 수명: {wastedDay.toFixed(2)}<br />남은 수명: {(remainLifeDay).toFixed(2)}<br/><br/>{remainHour}시간 {remainMinute}분 {remainSecond}초</p>
+        <p className="disclaimer">※ 위 계산 정보는 행정과 다르지 않음 수고 ㅠㅠ</p>
       </div>
     </div>
   );
